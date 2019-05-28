@@ -11,12 +11,18 @@ def days_left():
     return 31 - pick_today()
 
 
-# print(f"Faltam {days_left()} para acabar o mês")
-
 def last_day():
     weekday, last_day = calendar.monthrange(date.today().year, actual_month())
     return last_day
 
-# print(calendar.monthrange(date.today().year, actual_month()))
+def get_money():
+    amount = float(input("Quantidade de dinheiro: \n"))
+    return amount
 
-print(f"Este mês tem {last_day()} dias.")
+def calculate_budget(money_amount, present_day, days_left):
+    sugested_budget = (money_amount / days_left)
+    return sugested_budget
+
+print(calculate_budget(get_money(), pick_today(), days_left()))
+
+
