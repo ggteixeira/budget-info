@@ -20,11 +20,12 @@ def get_money():
     return amount
 
 def calculate_budget(money_amount, present_day, days_left):
-    sugested_budget = f"R$ {(money_amount / days_left):.2f}"
+    sugested_budget = f"Quantidade sugerida de dinheiro gasto por dia: R$ {(money_amount / days_left):.2f}"
     return sugested_budget
+
+print(f"Dias para terminar o mês: {days_left(last_day())}")
 
 print(calculate_budget(get_money(), pick_today(), days_left(last_day())))
 
-print(f"Dias para terminar o mês: {days_left(last_day())}")
 
 
