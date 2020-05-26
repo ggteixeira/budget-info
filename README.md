@@ -1,4 +1,4 @@
-# Budget Info
+# Budget Info 💵
 
 ## Resumo/introdução:
 
