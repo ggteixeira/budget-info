@@ -2,7 +2,7 @@ from datetime import date
 import calendar
 
 
-class timeMachine:
+class TimeMachine:
     def __init__(self):
         self.today = date.today().day
         self.this_month = date.today().month
