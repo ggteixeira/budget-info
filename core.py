@@ -28,7 +28,6 @@ if __name__ == "__main__":
     budget.get_money()
     budget.get_days_left()
 
-    print(
-        f"Faltam {budget.get_days_left()} dias para o final do mês. A sugestão de gasto diária é de R$ {budget.calculate_budget()}"
-    )
+    print(f"Faltam {budget.get_days_left()} dias para o final do mês.", end="")
+    print(f" A sugestão de gasto diária é de R$ {budget.calculate_budget()}")
 
