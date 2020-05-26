@@ -15,7 +15,7 @@ class timeMachine:
         return days_left
 
 
-class Calculator(timeMachine):  # TODO: implementar o self.money nesta classe
+class Calculator(timeMachine):
     def get_money(self):
         self.money = float(input("Dinheiro (R$): \n"))
 
