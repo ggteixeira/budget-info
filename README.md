@@ -7,7 +7,7 @@ O Budget Info é um app que sugere quanto o usuário deveria gastar por dia até
 ## Funcionalidades
 
 * Recebe como input a quantidade de dinheiro que o usuário possui
-* Retorna a sugestão de gasto diário, com base na data atual e na quantidade de dias que o mês atual possui
+* Retorna a sugestão de gasto diário, com base na data atual e no número restante de dias deste mês
 
 # Roadmap
 
