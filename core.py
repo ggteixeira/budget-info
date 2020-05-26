@@ -11,17 +11,15 @@ class TimeMachine:
         return calendar.monthrange(self.today, self.this_month)[1]
 
     def get_days_left(self):
-        days_left = self.get_last_monthday() - self.today
-        return days_left
+        return self.get_last_monthday() - self.today
 
 
-class Calculator(timeMachine):
+class Calculator(TimeMachine):
     def get_money(self):
         self.money = float(input("Dinheiro (R$): \n"))
 
     def calculate_budget(self):
-        budget = self.money / self.get_days_left()
-        return budget
+        return self.money / self.get_days_left()
 
 
 if __name__ == "__main__":
@@ -30,5 +28,7 @@ if __name__ == "__main__":
     budget.get_money()
     budget.get_days_left()
 
-    print(budget.calculate_budget())
+    print(
+        f"Faltam {budget.get_days_left()} dias para o final do mês. A sugestão de gasto diária é de R$ {budget.calculate_budget()}"
+    )
 
